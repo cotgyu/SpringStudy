@@ -1,7 +1,7 @@
-package net.study.baseMybatis.dao;
+package net.study.com.dao;
 
 
-import net.study.baseMybatis.domain.basic;
+import net.study.com.domain.basic;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

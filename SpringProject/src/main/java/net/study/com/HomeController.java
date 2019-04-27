@@ -1,4 +1,4 @@
-package net.study.baseMybatis;
+package net.study.com;
 
 import java.text.DateFormat;
 import java.util.Date;

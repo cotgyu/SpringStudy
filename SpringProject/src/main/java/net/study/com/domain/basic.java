@@ -1,4 +1,4 @@
-package net.study.baseMybatis.domain;
+package net.study.com.domain;
 
 public class basic {
 

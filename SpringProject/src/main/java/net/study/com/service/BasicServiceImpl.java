@@ -1,8 +1,8 @@
-package net.study.baseMybatis.service;
+package net.study.com.service;
 
 
-import net.study.baseMybatis.dao.basicDao;
-import net.study.baseMybatis.domain.basic;
+import net.study.com.dao.basicDao;
+import net.study.com.domain.basic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

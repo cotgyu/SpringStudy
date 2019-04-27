@@ -1,8 +1,8 @@
-package net.study.baseMybatis.web;
+package net.study.com.web;
 
 
-import net.study.baseMybatis.domain.basic;
-import net.study.baseMybatis.service.BasicService;
+import net.study.com.domain.basic;
+import net.study.com.service.BasicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

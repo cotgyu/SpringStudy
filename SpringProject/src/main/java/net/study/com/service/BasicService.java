@@ -1,8 +1,8 @@
-package net.study.baseMybatis.service;
+package net.study.com.service;
 
 
 
-import net.study.baseMybatis.domain.basic;
+import net.study.com.domain.basic;
 
 import java.util.List;
 

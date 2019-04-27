@@ -1,4 +1,4 @@
-package net.study.baseMybatis.dao;
+package net.study.com.dao;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.slf4j.Logger;
