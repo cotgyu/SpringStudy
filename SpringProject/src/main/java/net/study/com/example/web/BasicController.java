@@ -1,8 +1,8 @@
-package net.study.com.web;
+package net.study.com.example.web;
 
 
-import net.study.com.domain.basic;
-import net.study.com.service.BasicService;
+import net.study.com.example.domain.basic;
+import net.study.com.example.service.BasicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

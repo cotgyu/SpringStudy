@@ -1,4 +1,4 @@
-package net.study.com.domain;
+package net.study.com.example.domain;
 
 public class basic {
 

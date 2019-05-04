@@ -1,8 +1,8 @@
-package net.study.com.service;
+package net.study.com.example.service;
 
 
 
-import net.study.com.domain.basic;
+import net.study.com.example.domain.basic;
 
 import java.util.List;
 

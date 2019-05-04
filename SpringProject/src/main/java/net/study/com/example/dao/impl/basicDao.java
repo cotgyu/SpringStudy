@@ -1,7 +1,8 @@
-package net.study.com.dao;
+package net.study.com.example.dao.impl;
 
 
-import net.study.com.domain.basic;
+import net.study.com.example.dao.AbstractDAO;
+import net.study.com.example.domain.basic;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
