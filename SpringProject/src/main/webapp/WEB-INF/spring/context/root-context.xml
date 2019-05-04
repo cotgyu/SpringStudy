@@ -12,4 +12,29 @@
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
 	</bean>
+
+
+
+    <!-- Google 소셜 로그인 연결 설정 -->
+    <bean id="googleOAuth2Template" class="org.springframework.social.google.connect.GoogleOAuth2Template">
+        <constructor-arg value="508414677719-clrhg6p9fa4e1f8r3hgin0fpm7fd18il.apps.googleusercontent.com" />
+        <constructor-arg value="x4p7EkOeakuHYv-11spR0P2q" />
+    </bean>
+
+
+    <bean id="googleOAuth2Parameters" class="org.springframework.social.oauth2.OAuth2Parameters">
+        <property name="scope" value="profile"></property>
+        <property name="redirectUri" value="http://localhost:8080/login/googleSignInCallback" />
+    </bean>
+
+    <bean id="googleAuth" class="net.study.com.user.commons.GoogleAuth">
+        <constructor-arg value="508414677719-clrhg6p9fa4e1f8r3hgin0fpm7fd18il.apps.googleusercontent.com" />
+        <constructor-arg value="x4p7EkOeakuHYv-11spR0P2q" />
+    </bean>
+
+    <bean id="googleConnectionFactory" class="org.springframework.social.google.connect.GoogleConnectionFactory">
+        <constructor-arg value="508414677719-clrhg6p9fa4e1f8r3hgin0fpm7fd18il.apps.googleusercontent.com" />
+        <constructor-arg value="x4p7EkOeakuHYv-11spR0P2q" />
+    </bean>
+
 </beans>
