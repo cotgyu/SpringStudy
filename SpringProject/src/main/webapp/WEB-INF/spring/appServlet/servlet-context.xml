@@ -19,10 +19,26 @@
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
+		<beans:property name="order" value="1" />
 	</beans:bean>
-	
+
+
+	<!-- Tiles viewResolver
+	<beans:bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
+		<beans:property name="order" value="4" />
+	</beans:bean>
+
+	<beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<beans:property name="definitions" value="/WEB-INF/spring/context/tiles-context.xml"/>
+	</beans:bean>
+
+	-->
+
+
+
+
 	<context:component-scan base-package="net.study.com" />
-	
-	
-	
+
 </beans:beans>
+

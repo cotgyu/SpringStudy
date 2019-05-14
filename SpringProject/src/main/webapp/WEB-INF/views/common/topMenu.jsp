@@ -6,11 +6,16 @@
             <div class="col-sm-12 overflow">
                 <div class="social-icons pull-right">
                     <ul class="nav nav-pills">
-                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <c:choose>
+                            <c:when test="${sessionScope.loginId != null}">
+                                <a href="#">${sessionScope.loginId}</a>
+                                <a href="/login/logout">로그아웃</a>
+                            </c:when>
+                            <c:otherwise>
+                                <a href="/login/googleLogin" class="btn btn-common">로그인</a>
+                            </c:otherwise>
+                        </c:choose>
+
                     </ul>
                 </div>
             </div>
@@ -26,7 +31,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <h1><img src="/commons/images/logo.png" alt="logo"></h1>
                 </a>
 
